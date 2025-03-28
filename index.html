@@ -1,92 +1,95 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Unidade Conversora</title>
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-        <center><h1 class="text-4xl font-cursive text-red-600 mt-4">Unidade Conversora</h1></center>
+        <center><h1 style="font-family: cursive; font-size:50px; color:rgb(255, 0, 0)">Unidade Conversora</h1></center>
     </head>
 
-<body class="bg-azure">
-
-    <section id="home" class="text-center mt-5">
-        <header><b class="text-xl">Unidade Conversora</b></header>
-        <nav class="mt-3">
-            <a href="#temperatura"><button class="bg-blue-500 text-white p-2 m-2 rounded">Temperatura</button></a>
-            <a href="#peso"><button class="bg-blue-500 text-white p-2 m-2 rounded">Peso</button></a>
-            <a href="#distancia"><button class="bg-blue-500 text-white p-2 m-2 rounded">Distância</button></a>
+<body style="background-color:azure;">
+    <section id="home">
+        <header><b>Unidade Conversora</b></header>
+        <nav>
+            <!-- Botão para temperatura -->
+            <a href="#temperatura"><button>Temperatura</button></a>
+            <!-- Botão para peso -->
+            <a href="#peso"><button>Peso</button></a>
+            <!-- Botão para distância -->
+            <a href="#distancia"><button>Distância</button></a>
         </nav>
     </section>
 
-    <div id="seções de conversão" class="mx-auto mt-6">
-        <section id="temperatura" class="mt-5">
-            <div id="tmp" class="text-center">
+    <div id="seções de conversão">
+        <!-- Conversão de temperatura -->
+        <section id="temperatura">
+            <div id="tmp">
                 <figure>
-                    <img src="imagens/termometro.jpg" width="200px" class="mx-auto"/>
+                    <img src="imagens/termometro.jpg" width="200px"/>
                     <figcaption>Conversão de Celsius para Fahrenheit</figcaption>
                 </figure>
                 <article>
-                    <fieldset class="mt-3">
-                        <legend class="text-lg font-semibold">Temperatura</legend>
+                    <fieldset>
+                        <legend>Temperatura</legend>
                         <label for="c">Celsius</label> <br/>
-                        <input type="number" id="c" class="p-2 border rounded mt-2"> <br/>
-                        <button id="temperaturaBtn" class="bg-blue-500 text-white p-2 m-2 rounded">Converter</button> <br/>
-                        <input type="number" id="f" class="p-2 border rounded mt-2" readonly> <br/>
+                        <input type="number" id="c"> <br/>
+                        <button id="temperaturaBtn">Converter</button> <br/>
+                        <input type="number" id="f"> <br/>
                         <label for="f">Fahrenheit</label>
                     </fieldset>
                 </article>
-                <aside class="text-sm mt-4">Para converter Celsius para Fahrenheit, use esta fórmula: (C × 9/5) + 32</aside>
+                <aside>Para converter Celsius para Fahrenheit, use esta fórmula substituindo o `C` pela sua temperatura em Celsius: (C × 9/5) + 32</aside>
             </div>
         </section>
 
-        <section id="peso" class="mt-5">
-            <div id="kg" class="text-center">
+        <!-- Conversão de peso -->
+        <section id="peso">
+            <div id="kg">
                 <figure>
-                    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png" width="200px" class="mx-auto"/>
+                    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png" width="200px"/>
                     <figcaption>Conversão de Quilos para Libras</figcaption>
                 </figure>
                 <article>
-                    <fieldset class="mt-3">
-                        <legend class="text-lg font-semibold">Peso</legend>
-                        <label for="Kg">Kg</label></br>
-                        <input type="number" id="kg" class="p-2 border rounded mt-2"><br/>
-                        <button id="pesoBtn" class="bg-blue-500 text-white p-2 m-2 rounded">Converter</button></br>
-                        <input type="number" id="ibf" class="p-2 border rounded mt-2" readonly></br>
-                        <label for="ibf">Libras</label></br>
+                    <fieldset>
+                        <legend>Peso</legend>
+                        <label for="Kg">Kg</label><br/>
+                        <input type="number" id="kg"><br/>
+                        <button id="pesoBtn">Converter</button><br/>
+                        <input type="number" id="ibf" readonly><br/>
+                        <label for="ibf">Libras</label><br/>
                     </fieldset>
                 </article>
-                <aside class="text-sm mt-4">Para converter o peso de quilos para libras, use esta fórmula: Kg × 2.205</aside>
+                <aside>Para converter o peso de quilos para libras, use esta fórmula substituindo "Kg" pelo peso em quilogramas (kg x 2.205)</aside>
             </div>
         </section>
 
-        <section id="distancia" class="mt-5">
-            <div id="dst" class="text-center">
+        <!-- Conversão de distância -->
+        <section id="distancia">
+            <div id="dst">
                 <figure>
-                    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png" width="200px" class="mx-auto"/>
+                    <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png" width="200px"/>
                     <figcaption>Conversão de Quilômetros para Milhas</figcaption>
                 </figure>
                 <article>
-                    <fieldset class="mt-3">
-                        <legend class="text-lg font-semibold">Distância</legend>
-                        <label for="Km">Km</label></br>
-                        <input type="number" id="Km" class="p-2 border rounded mt-2"></br>
-                        <button id="distanciaBtn" class="bg-blue-500 text-white p-2 m-2 rounded">Converter</button></br>
-                        <input type="number" id="m" class="p-2 border rounded mt-2" readonly></br>
+                    <fieldset>
+                        <legend>Distância</legend>
+                        <label for="Km">Km</label><br/>
+                        <input type="number" id="Km"><br/>
+                        <button id="distanciaBtn">Converter</button><br/>
+                        <input type="number" id="m"><br/>
                         <label for="m">Milhas</label>
                     </fieldset>
                 </article>
-                <aside class="text-sm mt-4">Para converter a distância de quilômetros para milhas, use esta fórmula: Km ÷ 1.609</aside>
+                <aside>Para converter a distância de quilômetros para milhas, use esta fórmula substituindo "km" pela distância (km ÷ 1.609)</aside>
             </div>
         </section>
 
-        <div id="go-home" class="text-center mt-5">
+        <!-- Link para voltar para o início -->
+        <div id="go-home">
             <a href="#home">
-                <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg" class="w-12 mx-auto"/>
+                <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/home.svg"/>
             </a>
         </div>
 
-        <footer class="text-center mt-5">Unidade Conversora criada por Kauan Turra</footer>
+        <footer>Unidade Conversora criada por Kauan Turra</footer>
     </div>
 
     <script>
@@ -132,6 +135,5 @@
             }
         });
     </script>
-
 </body>
 </html>
